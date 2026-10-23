@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="footballchamp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/footballchamp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/footballchamp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="core/Config.h" />
+		<Unit filename="core/Match.h" />
+		<Unit filename="core/MatchLog.h" />
+		<Unit filename="core/Team.h" />
+		<Unit filename="io/Paths.cpp" />
+		<Unit filename="io/Paths.h" />
+		<Unit filename="io/TeamLoader.cpp" />
+		<Unit filename="io/TeamLoader.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sim/MatchSimulator.cpp" />
+		<Unit filename="sim/MatchSimulator.h" />
+		<Unit filename="sim/Random.cpp" />
+		<Unit filename="sim/Random.h" />
+		<Unit filename="tools/BatchSimulation.cpp" />
+		<Unit filename="tools/BatchSimulation.h" />
+		<Unit filename="tournament/LeagueDraw.cpp" />
+		<Unit filename="tournament/LeagueDraw.h" />
+		<Unit filename="tournament/LeagueTable.cpp" />
+		<Unit filename="tournament/LeagueTable.h" />
+		<Unit filename="tournament/PlayoffManager.cpp" />
+		<Unit filename="tournament/PlayoffManager.h" />
+		<Unit filename="tournament/Tournament.cpp" />
+		<Unit filename="tournament/Tournament.h" />
+		<Unit filename="ui/Broadcast.cpp" />
+		<Unit filename="ui/Broadcast.h" />
+		<Unit filename="ui/CalendarScreen.cpp" />
+		<Unit filename="ui/Console.cpp" />
+		<Unit filename="ui/Console.h" />
+		<Unit filename="ui/DrawScreens.cpp" />
+		<Unit filename="ui/GameEngine.cpp" />
+		<Unit filename="ui/GameEngine.h" />
+		<Unit filename="ui/MatchScreens.cpp" />
+		<Unit filename="ui/Printers.cpp" />
+		<Unit filename="ui/Printers.h" />
+		<Unit filename="ui/Screens.h" />
+		<Unit filename="ui/TableScreen.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

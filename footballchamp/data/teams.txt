@@ -1,0 +1,503 @@
+﻿# Команди турніру та їхні стартові склади.
+#
+# РЯДОК КОМАНДИ:   Назва команди ; атака ; захист
+#   Атака й захист - числа більше 0 (десяткова крапка або кома).
+# РЯДОК ГРАВЦЯ (під рядком своєї команди):   ПОЗИЦІЯ  Ім'я
+#   Позиція: GK (воротар), DF (захисник), MF (півзахисник), FW (нападник).
+#   Замість скорочення можна писати слово: воротар, захисник, півзахисник, нападник.
+#   Ім'я може містити пробіли. Відступ перед позицією необов'язковий.
+#
+# ВИМОГИ:
+#   - рівно 36 команд;
+#   - у кожної команди рівно 11 гравців, з них рівно один воротар;
+#   - імена гравців у межах команди не повторюються;
+#   - перші 9 команд - корзина 1, наступні 9 - корзина 2 і так далі;
+#   - номер команди в списку (1-36) є її початковим рейтингом
+#     (використовується як 5-те правило сортування турнірної таблиці).
+#
+# ХТО ЗАБИВАЄ: нападники забивають найчастіше, потім півзахисники, потім захисники,
+#   воротарі не забивають (див. SCORER_WEIGHT_* у core/Config.h).
+#
+# УВАГА: склади корзини 1 складено з пам'яті як приклад. Вони можуть бути неточними
+#   (трансфери, травми, схеми) - перевірте й виправте. У решти команд стоять шаблонні
+#   імена (Воротар, Захисник 1, ...) - замініть їх на справжні.
+#
+# Порожні рядки та рядки, що починаються з #, ігноруються.
+# Файл можна зберігати в UTF-8 (з BOM або без) чи Windows-1251.
+
+
+# =============== Корзина 1 ===============
+
+PSG; 93; 88
+  GK  Matvey Safonov
+  DF  Achraf Hakimi
+  DF  Marquinhos
+  DF  Willian Pacho
+  DF  Nuno Mendes
+  MF  Vitinha
+  MF  Joao Neves
+  MF  Fabian Ruiz
+  FW  Ousmane Dembele
+  FW  Desire Doue
+  FW  Khvicha Kvaratskhelia
+
+Bayern Munchen; 94; 88
+  GK  Manuel Neuer
+  DF  Konrad Laimer
+  DF  Dayot Upamecano
+  DF  Jonathan Tah
+  DF  Alphonso Davies
+  MF  Aleksandar Pavlovic
+  MF  Joshua Kimmich
+  MF  Jamal Musiala
+  FW  Michael Olise
+  FW  Harry Kane
+  FW  Luis Diaz
+
+Real Madrid; 92; 85
+  GK  Thibaut Courtois
+  DF  Denzel Dumfries
+  DF  Ibrahima Konate
+  DF  Dean Huijsen
+  DF  Marc Cucurella
+  MF  Aurelien Tchouameni
+  MF  Federico Valverde
+  MF  Jude Bellingham
+  MF  Arda Guler
+  FW  Vini Jr.
+  FW  Kylian Mbappe
+
+Liverpool; 88; 85
+  GK  Alisson
+  DF  Jeremie Frimpong
+  DF  Virgil van Dijk
+  DF  Ronald Araujo
+  DF  Milos Kerkez
+  MF  Ryan Gravenberch
+  MF  Dominik Szoboszlai
+  MF  Florian Wirtz
+  FW  Bradley Barcola
+  FW  Hugo Ekitike
+  FW  Alexander Isak
+
+Inter; 84; 89
+  GK  Ivan Provedel
+  DF  Djed Spence
+  DF  Alessandro Bastoni
+  DF  Manuel Akanji
+  DF  John Stones
+  DF  Federico Dimarco
+  MF  Nicolo Barella
+  MF  Hakan Calhanoglu
+  MF  Piotr Zielinski
+  FW  Lautaro Martinez
+  FW  Marcus Thuram
+
+Manchester City; 90; 86
+  GK  Gianluigi Donnarumma
+  DF  Matheus Nunes
+  DF  Ruben Dias
+  DF  Marc Guehi
+  DF  Josko Gvardiol
+  MF  Elliot Anderson
+  MF  Rayan Cherki
+  MF  Enzo Fernandez
+  FW  Antoine Semenyo
+  FW  Erling Haaland
+  FW  Jeremy Doku
+
+Arsenal; 87; 92
+  GK  David Raya
+  DF  Jurrien Timber
+  DF  Gabriel
+  DF  William Saliba
+  DF  Piero Hincapie
+  MF  Declan Rice
+  MF  Bruno Guimaraes
+  MF  Martin Odegaard
+  FW  Bukayo Saka
+  FW  Viktor Gyokeres
+  FW  Christos Tzolis
+
+Barcelona; 95; 85
+  GK  Joan Garcia
+  DF  Eric Garcia
+  DF  Pau Cubarsi
+  DF  Gerard Martin
+  DF  Joao Cancelo
+  MF  Rodri
+  MF  Pedri
+  MF  Fermin Lopez
+  FW  Lamine Yamal
+  FW  Raphinha
+  FW  Anthony Gordon
+
+Atletico Madrid; 86; 88
+  GK  Jan Oblak
+  DF  Marcos Llorente
+  DF  David Hancko
+  DF  Cristian Romero
+  DF  Alejandro Grimaldo
+  MF  Morten Hjulmand
+  MF  Pablo Barrios
+  MF  Kang In Lee
+  FW  Giuliano Simeone
+  FW  Julian Alvarez
+  FW  Alex Baena
+
+# =============== Корзина 2 ===============
+
+Borussia Dortmund; 83; 82
+  GK  Gregor Kobel
+  DF  Julian Ryerson
+  DF  Nico Schlotterbeck
+  DF  Waldemar Anton
+  DF  Ramy Bensebaini
+  MF  Felix Nmecha
+  MF  Marcel Sabitzer
+  MF  Jobe Bellingham
+  MF  Carney Chukwuemeka
+  FW  Serhou Guirassy
+  FW  Fabio Silva
+
+Roma; 84; 82
+  GK  Mile Svilar
+  DF  Nahuel Molina
+  DF  Gianluca Mancini
+  DF  Evan Ndicka
+  DF  Mario Hermoso
+  DF  Wesley
+  MF  Kouadio Kone
+  MF  Bryan Cristante
+  MF  Marten de Roon
+  FW  Paulo Dybala
+  FW  Donyell Malen
+
+Sporting; 82; 80
+  GK  Rui Silva
+  DF  Eduardo Quaresma
+  DF  Goncalo Inacio
+  DF  Zeno Debast
+  DF  Nuno Santos
+  MF  Altimira
+  MF  Silas Andersen
+  MF  Rodrigo Zalazar
+  FW  Geny Catamo
+  FW  Luis Suarez
+  FW  Maximiliano Araujo
+
+Aston Villa; 84; 79
+  GK  Marco Bizot
+  DF  Matty Cash
+  DF  Pau Torres
+  DF  Tyrone Mings
+  DF  Ian Maatsen
+  MF  Boubacar Kamara
+  MF  Amadou Onana
+  MF  Leon Goretzka
+  FW  John McGinn
+  FW  Nicolas Jackson
+  FW  Emiliano Buendia
+
+Porto; 80; 80
+  GK  Diogo Costa
+  DF  Alberto Costa
+  DF  Jan Bednarek
+  DF  Chris Smalling
+  DF  Jakub Kiwior
+  MF  Victor Froholdt
+  MF  Gabri Veiga
+  MF  Alan Varela
+  FW  Andre Silva
+  FW  Samu
+  FW  Santiago Gimenez
+
+Manchester United; 85; 79
+  GK  Senne Lammens
+  DF  Noussair Mazraoui
+  DF  Lisandro Martinez
+  DF  Matthijs de Ligt
+  DF  Diogo Dalot
+  MF  Kobbie Mainoo
+  MF  Youri Tielemans
+  MF  Bruno Fernandes
+  FW  Bryan Mbeumo
+  FW  Benjamin Sesko
+  FW  Matheus Cunha
+
+Club Brugge KV; 76; 76
+  GK  Yann Sommer
+  DF  Kyriani Sabbe
+  DF  Brandon Mechele
+  DF  Joel Ordonez
+  DF  Joaquin Seys
+  MF  Hans Vanaken
+  MF  Freddie Potts
+  MF  Hugo Vetlesen
+  FW  Carlos Forbs
+  FW  Nicolo Tresoldi
+  FW  Jan Virgili
+
+Real Betis; 77; 78
+  GK  Alvaro Valles
+  DF  Aitor Ruibal
+  DF  Natan
+  DF  Diego Llorente
+  DF  Fran Garcia
+  MF  Giovani Lo Celso
+  MF  Fornals
+  MF  Isco
+  FW  Antony
+  FW  Cucho Hernandez
+  FW  Abde
+
+PSV; 76; 75
+  GK  Matej Kovar
+  DF  Sergino Dest
+  DF  Jerdy Schouten
+  DF  Lutsharel Geertruida
+  DF  Mauro Junior
+  MF  Kodai Sano
+  MF  Sven Mijnans
+  MF  Guus Til
+  FW  Dennis Man
+  FW  Ricardo Pepi
+  FW  Ivan Perisic
+
+# =============== Корзина 3 ===============
+
+Feyenoord; 75; 75
+  GK  Tjark Ernst
+  DF  Givairo Read
+  DF  Tsuyoshi Watanabe
+  DF  Gjivai Zechiel
+  DF  Jordan Bos
+  MF  Luciano Valente
+  MF  Charles Vanhoutte
+  MF  Sem Steijn
+  MF  Oussama Targhalline
+  FW  Anis Hadj Moussa
+  FW  Reiss Nelson
+
+Lille OSC; 74; 73
+  GK  Berke Ozer
+  DF  Tiago Santos
+  DF  Nathan Ngoy
+  DF  Alexsandro
+  DF  Romain Perraud
+  MF  Benjamin Andre
+  MF  Nabil Bentaleb
+  MF  Hakon Haraldsson
+  FW  Olivier Giroud
+  FW  Ayase Ueda
+  FW  Dilane Bakwa
+
+FK Bodo/Glimt; 79; 77
+  GK  Nikita Haikin
+  DF  Fredrik Sjovold
+  DF  Odin Bjortuft
+  DF  Haitam Aleesami
+  DF  Fredrik Bjorkan
+  MF  Patrick Berg
+  MF  Sondre Fet
+  MF  Ulrik Saltnes
+  FW  Hakon Evjen
+  FW  Ole Blomberg
+  FW  Jens Hauge
+
+Napoli; 78; 77
+  GK  Alex Meret
+  DF  Giovanni Di Lorenzo
+  DF  Amir Rrahmani
+  DF  Alessandro Buongiorno
+  DF  Leonardo Spinazzola
+  MF  Stanislav Lobotka
+  MF  Kevin De Bruyne
+  MF  Scott McTominay
+  FW  Matteo Politano
+  FW  Rasmus Hojlund
+  FW  David Neres
+
+RB Leipzig; 73; 72
+  GK  Maarten Vandevoordt
+  DF  Ridle Baku
+  DF  Willi Orban
+  DF  Castello Lukeba
+  DF  David Raum
+  MF  Nicolas Seiwald
+  MF  Neil El Aynaoui
+  MF  Christoph Baumgartner
+  FW  Romulo
+  FW  Christopher Nkunku
+  FW  Antonio Nusa
+
+Villarreal; 73; 75
+  GK  Peter Gulacsi
+  DF  Juan Foyth
+  DF  Santiago Mourino
+  DF  Renato Veiga
+  DF  Carlos Romero
+  MF  Pape Gueye
+  MF  Santi Comesana
+  MF  Moleiro
+  FW  Nicolas Pepe
+  FW  Gerard Moreno
+  FW  Ayoze
+
+Fenerbahce; 74; 74
+  GK  Ederson
+  DF  Nelson Semedo
+  DF  Milan Skriniar
+  DF  Nathan Ake
+  DF  Jayden Oosterwolde
+  MF  N'Golo Kante
+  MF  Marco Asensio
+  MF  Matteo Guendouzi
+  FW  Mason Greenwood
+  FW  Romelu Lukaku
+  FW  Vedat Muriqi
+
+Shakhtar Donetsk; 74; 75
+  GK  Dmytro Riznyk
+  DF  Oleksandr Karavaiev
+  DF  Mykola Matviienko
+  DF  Valeriy Bondar
+  DF  Pedro Henrique
+  MF  Dmytro Kryskiv
+  MF  Marlon Gomes
+  MF  Alisson
+  FW  Pedrinho
+  FW  Prosper Obah
+  FW  Kaua Elias
+
+Galatasaray; 77; 70
+  GK  Ugurcan Cakir
+  DF  Roland Sallai
+  DF  Davinson Sanchez
+  DF  Wilfried Singo
+  DF  Jakobs
+  MF  Lucas Torreira
+  MF  Gabriel Sara
+  MF  Baris Yilmaz
+  FW  Rafael Leao
+  FW  Victor Osimhen
+  FW  Leroy Sane
+
+# =============== Корзина 4 ===============
+
+Slavia Praha; 68; 67
+  GK  Jakub Markovic
+  DF  Tomas Vlcek
+  DF  Tomas Holes
+  DF  Stepan Chaloupek
+  DF  David Zima
+  DF  David Jurasek
+  MF  Michal Sadilek
+  MF  David Moses
+  MF  Lukas Provod
+  FW  Mojmir Chytil
+  FW  Tomas Chory
+
+Slovan; 66; 66
+  GK  Domonik Takac
+  DF  Cesar Blackman
+  DF  Kenan Bajric
+  DF  Svetozar Markovic
+  DF  Sandro Cruz
+  MF  Peter Pokorny
+  MF  Artur Gajdos
+  MF  Rahim Ibrahim
+  FW  Tigran Barseghyan
+  FW  Nino Marcelli
+  FW  Seleiman Camara
+
+Stuttgart; 70; 69
+  GK  Dennis Seimen
+  DF  Josha Vagnoman
+  DF  Julian Chabot
+  DF  Ramon Hendriks
+  DF  Maximilian Mittelstadt
+  MF  Angelo Stiller
+  MF  Chris Fuhrich
+  MF  Jamie Leweling
+  FW  Tiago Tomas
+  FW  Ermedin Demirovic
+  FW  Deniz Undav
+
+AEK Athens; 68; 64
+  GK  Thomas Strakosha
+  DF  Lazaros Rota
+  DF  Harold Moukoudi
+  DF  Filipe Bem Relvas
+  DF  Charalampos Lykogiannis
+  MF  Razvan Marin
+  MF  Aboubakary Koita
+  MF  Lovro Majer
+  FW  Barnabas Varga
+  FW  Luka Jovic
+  FW  Oleksandr Zubkov
+
+LASK; 66; 65
+  GK  Lukas Jungwirth
+  DF  Melayro Bogarde
+  DF  Daniel Elfadli
+  DF  Joao Tornich
+  DF  Xavier Mbuyamba
+  DF  George Bello
+  MF  Sascha Horvath
+  MF  Robert Ljubicic
+  FW  Sasa Kalajdzic
+  FW  Moses Usor
+  FW  Samuel Adeniran
+
+Como; 71; 72
+  GK  Robert Sanchez
+  DF  Yan Couto
+  DF  Trevoh Chalobah
+  DF  Marc Kempf
+  DF  Kaiki
+  MF  Luis Milla
+  MF  Martin Baturina
+  MF  Samuele Ricci
+  MF  Nico Paz
+  FW  Moise Kean
+  FW  Tasos Douvikas
+
+RC Lens; 67; 67
+  GK  Robin Risser
+  DF  Ruben Aguilar
+  DF  Ismaelo Ganiou
+  DF  Samson Baidoo
+  DF  Jonathan Gradit
+  DF  Matthieu Udol
+  MF  Saud Abdulhamid
+  MF  Amadou Haidara
+  FW  Florian Thauvin
+  FW  Odsonne Edouard
+  FW  Franjo Ivanovic
+
+Viking FK; 68; 69
+  GK  Arild Ostbo
+  DF  Henrik Heggheim
+  DF  Henrik Falchener
+  DF  Gianni Stensness
+  DF  Kristoffer Haugen
+  MF  Joe Bell
+  MF  Kristoffer Askildsen
+  MF  Henrik Bjordal
+  FW  Zlatko Tripic
+  FW  Peter Christiansen
+  FW  Erik Botheim
+
+Sabah; 60; 61
+  GK  Stan Pokatilov
+  DF  Akim Zedadka
+  DF  Steve Solvet
+  DF  Aden McCarthy
+  DF  Tymoteusz Puchacz
+  MF  Umarali Rakhmonaliev
+  MF  Ivan Lapinjica
+  MF  Du Queiroz
+  FW  Kaheem Parris
+  FW  Joy Mickels
+  FW  Veljko Simic

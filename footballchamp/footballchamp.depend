@@ -1,0 +1,329 @@
+# depslib dependency file v1.0
+1792424158 source:e:\labs\newlabs\footballchamp\main.cpp
+	<cstdint>
+	<cstdlib>
+	<iostream>
+	<string>
+	"io/TeamLoader.h"
+	"sim/Random.h"
+	"tools/BatchSimulation.h"
+	"ui/Console.h"
+	"ui/GameEngine.h"
+
+1792080697 source:e:\labs\newlabs\footballchamp\leaguestage.cpp
+	"LeagueStage.h"
+	<iostream>
+	<iomanip>
+
+1790431313 e:\labs\newlabs\footballchamp\leaguestage.h
+	"LeagueDraw.h"
+	"MatchSimulator.h"
+	<vector>
+
+1792330354 e:\labs\newlabs\footballchamp\leaguedraw.h
+	"Team.h"
+	"Match.h"
+	"Config.h"
+	<vector>
+	<string>
+	<utility>
+
+1792311366 e:\labs\newlabs\footballchamp\team.h
+	<string>
+
+1792161686 e:\labs\newlabs\footballchamp\match.h
+	"Team.h"
+	"MatchLog.h"
+
+1792068309 e:\labs\newlabs\footballchamp\matchlog.h
+	<string>
+	<vector>
+
+1792311437 e:\labs\newlabs\footballchamp\matchsimulator.h
+	"Team.h"
+	"MatchLog.h"
+	"Config.h"
+	<random>
+
+1792311399 source:e:\labs\newlabs\footballchamp\matchsimulator.cpp
+	"MatchSimulator.h"
+	<algorithm>
+	<cmath>
+
+1792330392 source:e:\labs\newlabs\footballchamp\gameengine.cpp
+	"GameEngine.h"
+	"LeagueDraw.h"
+	"MatchLog.h"
+	<iostream>
+	<iomanip>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<algorithm>
+	<map>
+	<climits>
+
+1792329016 e:\labs\newlabs\footballchamp\gameengine.h
+	<vector>
+	<string>
+	<chrono>
+	<thread>
+	<iostream>
+	<iomanip>
+	<map>
+	<optional>
+	"Team.h"
+	"Match.h"
+	"MatchSimulator.h"
+	"LeagueDraw.h"
+	"LeagueTable.h"
+	"PlayoffManager.h"
+	"Config.h"
+
+1792161922 source:e:\labs\newlabs\footballchamp\leaguedraw.cpp
+	"LeagueDraw.h"
+	<algorithm>
+	<random>
+
+1792162262 e:\labs\newlabs\footballchamp\leaguetable.h
+	<string>
+	<vector>
+	"Team.h"
+
+1792162275 source:e:\labs\newlabs\footballchamp\leaguetable.cpp
+	"LeagueTable.h"
+	<iostream>
+	<iomanip>
+	<algorithm>
+
+1792330367 e:\labs\newlabs\footballchamp\playoffmanager.h
+	<vector>
+	<string>
+	"Team.h"
+	"Match.h"
+	"LeagueTable.h"
+
+1792330381 source:e:\labs\newlabs\footballchamp\playoffmanager.cpp
+	"PlayoffManager.h"
+	<algorithm>
+	<random>
+
+1792309382 e:\labs\newlabs\footballchamp\config.h
+
+1792329003 source:e:\labs\newlabs\footballchamp\gameengineflow.cpp
+	"GameEngine.h"
+	"LeagueDraw.h"
+
+1792424618 source:e:\labs\newlabs\footballchamp\io\paths.cpp
+	"Paths.h"
+	<algorithm>
+	<fstream>
+	<windows.h>
+	<unistd.h>
+
+1792387390 e:\labs\newlabs\footballchamp\io\paths.h
+	<string>
+	<vector>
+
+1792510876 source:e:\labs\newlabs\footballchamp\io\teamloader.cpp
+	"TeamLoader.h"
+	<cstdlib>
+	<fstream>
+	<iterator>
+	<map>
+	<sstream>
+	"../core/Config.h"
+	"Paths.h"
+
+1792474646 e:\labs\newlabs\footballchamp\io\teamloader.h
+	<string>
+	<vector>
+	"../core/Team.h"
+
+1792474646 e:\labs\newlabs\footballchamp\core\team.h
+	<string>
+	<vector>
+
+1792474646 e:\labs\newlabs\footballchamp\core\config.h
+
+1792474646 e:\labs\newlabs\footballchamp\sim\random.h
+	<cstdint>
+	<random>
+	<utility>
+	<vector>
+
+1792424158 e:\labs\newlabs\footballchamp\tools\batchsimulation.h
+	<cstdint>
+	<vector>
+	"../core/Team.h"
+
+1792387318 e:\labs\newlabs\footballchamp\ui\console.h
+
+1792424158 e:\labs\newlabs\footballchamp\ui\gameengine.h
+	<cstdint>
+	<vector>
+	"../core/Team.h"
+	"../tournament/Tournament.h"
+
+1792424158 e:\labs\newlabs\footballchamp\tournament\tournament.h
+	<map>
+	<optional>
+	<string>
+	<vector>
+	"../core/Config.h"
+	"../core/Match.h"
+	"../core/Team.h"
+	"../sim/MatchSimulator.h"
+	"../sim/Random.h"
+	"LeagueDraw.h"
+	"LeagueTable.h"
+	"PlayoffManager.h"
+
+1792387318 e:\labs\newlabs\footballchamp\core\match.h
+	"Team.h"
+	"MatchLog.h"
+
+1792474646 e:\labs\newlabs\footballchamp\core\matchlog.h
+	<string>
+	<vector>
+
+1792424158 e:\labs\newlabs\footballchamp\sim\matchsimulator.h
+	"../core/Team.h"
+	"../core/MatchLog.h"
+	"../core/Config.h"
+	"Random.h"
+
+1792424158 e:\labs\newlabs\footballchamp\tournament\leaguedraw.h
+	"../core/Team.h"
+	"../core/Match.h"
+	"../core/Config.h"
+	"../sim/Random.h"
+	<vector>
+	<string>
+	<utility>
+
+1792387318 e:\labs\newlabs\footballchamp\tournament\leaguetable.h
+	<string>
+	<vector>
+	"../core/Team.h"
+
+1792424158 e:\labs\newlabs\footballchamp\tournament\playoffmanager.h
+	<vector>
+	<string>
+	"../core/Team.h"
+	"../core/Match.h"
+	"LeagueTable.h"
+	"../sim/Random.h"
+
+1792474646 source:e:\labs\newlabs\footballchamp\sim\matchsimulator.cpp
+	"MatchSimulator.h"
+	<algorithm>
+	<cmath>
+	<vector>
+
+1792474646 source:e:\labs\newlabs\footballchamp\sim\random.cpp
+	"Random.h"
+	<cmath>
+
+1792424158 source:e:\labs\newlabs\footballchamp\tools\batchsimulation.cpp
+	"BatchSimulation.h"
+	<algorithm>
+	<iomanip>
+	<iostream>
+	<map>
+	<string>
+	"../core/Config.h"
+	"../tournament/Tournament.h"
+
+1792424158 source:e:\labs\newlabs\footballchamp\tournament\leaguedraw.cpp
+	"LeagueDraw.h"
+	<algorithm>
+
+1792387318 source:e:\labs\newlabs\footballchamp\tournament\leaguetable.cpp
+	"LeagueTable.h"
+	<algorithm>
+
+1792424158 source:e:\labs\newlabs\footballchamp\tournament\playoffmanager.cpp
+	"PlayoffManager.h"
+	<algorithm>
+
+1792424158 source:e:\labs\newlabs\footballchamp\tournament\tournament.cpp
+	"Tournament.h"
+
+1792474646 source:e:\labs\newlabs\footballchamp\ui\broadcast.cpp
+	"Broadcast.h"
+	<chrono>
+	<iomanip>
+	<iostream>
+	<string>
+	<thread>
+	<vector>
+	"../core/Config.h"
+	"Console.h"
+	"Printers.h"
+
+1792387318 e:\labs\newlabs\footballchamp\ui\broadcast.h
+	"../core/Match.h"
+
+1792387318 source:e:\labs\newlabs\footballchamp\ui\calendarscreen.cpp
+	"Screens.h"
+	<climits>
+	<iomanip>
+	<iostream>
+	<string>
+	<vector>
+	"Console.h"
+	"Printers.h"
+
+1792387318 e:\labs\newlabs\footballchamp\ui\screens.h
+	"../tournament/Tournament.h"
+
+1792474646 e:\labs\newlabs\footballchamp\ui\printers.h
+	<string>
+	<vector>
+	"../core/Match.h"
+	"../core/Team.h"
+	"../tournament/PlayoffManager.h"
+
+1792424618 source:e:\labs\newlabs\footballchamp\ui\console.cpp
+	"Console.h"
+	<cstdlib>
+	<iostream>
+	<windows.h>
+
+1792387318 source:e:\labs\newlabs\footballchamp\ui\drawscreens.cpp
+	"Screens.h"
+	<iomanip>
+	<iostream>
+	"../tournament/LeagueDraw.h"
+	"Console.h"
+	"Printers.h"
+
+1792424158 source:e:\labs\newlabs\footballchamp\ui\gameengine.cpp
+	"GameEngine.h"
+	<iostream>
+	"Console.h"
+	"Screens.h"
+
+1792387318 source:e:\labs\newlabs\footballchamp\ui\matchscreens.cpp
+	"Screens.h"
+	<iomanip>
+	<iostream>
+	"../core/Config.h"
+	"Broadcast.h"
+	"Console.h"
+	"Printers.h"
+
+1792474646 source:e:\labs\newlabs\footballchamp\ui\printers.cpp
+	"Printers.h"
+	<algorithm>
+	<iomanip>
+	<iostream>
+
+1792387318 source:e:\labs\newlabs\footballchamp\ui\tablescreen.cpp
+	"Screens.h"
+	<iomanip>
+	<iostream>
+	<string>
+	"Console.h"
+
